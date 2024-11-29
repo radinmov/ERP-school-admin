@@ -1,12 +1,14 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // For navigation
+import { useNavigate } from 'react-router-dom';
 import Sidebar from '../../componets/Sidebar';
+import useTitle from "../../componets/Hook/useTitle";
 
 export const HomeWork = () => {
+  useTitle("HomeWork part")
   const navigate = useNavigate();
 
   const goToChart = () => {
-    navigate('/homework-chart'); // Navigate to the chart route
+    navigate('/homework/charts'); 
   };
 
   return (

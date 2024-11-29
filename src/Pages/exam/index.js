@@ -1,6 +1,8 @@
 import Sidebar from "../../componets/Sidebar";
+import useTitle from "../../componets/Hook/useTitle";
 
 export const Exam = () => {
+  useTitle("exam-center")
   return (
     <div className="h-screen flex flex-col bg-gray-100">
 

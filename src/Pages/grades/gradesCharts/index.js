@@ -11,16 +11,18 @@ import {
   Legend,
 } from 'chart.js';
 import Sidebar from '../../../componets/Sidebar';
+import useTitle from "../../../componets/Hook/useTitle";
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Title, Tooltip, Legend);
 
 export const GradesChart = () => {
+  useTitle("charting-grades")
   const data = {
     labels: ['مهر', 'آذر', 'بهمن', 'اردیبهشت', 'خرداد'], 
     datasets: [
       {
         label: 'نمرات',
-        data: [15, 10, 12, 17, 18], // Sample grades
+        data: [15, 10, 12, 17, 18], 
         borderColor: 'rgba(75, 192, 192, 1)',
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
         pointBackgroundColor: 'rgba(75, 192, 192, 1)',

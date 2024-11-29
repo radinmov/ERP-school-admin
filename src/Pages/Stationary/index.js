@@ -1,8 +1,10 @@
 import React from 'react';
 import Sidebar from '../../componets/Sidebar';
 import { FaCalendarAlt } from 'react-icons/fa';
+import useTitle from "../../componets/Hook/useTitle";
 
 export const Stationary = () => {
+  useTitle("Stationary")
   return (
     <div className="h-screen flex">
       <Sidebar />

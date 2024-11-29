@@ -1,6 +1,8 @@
 import Sidebar from "../../componets/Sidebar";
+import useTitle from "../../componets/Hook/useTitle";
 
 export const ClassManage = () => {
+  useTitle("Class-managemnt")
   const classes = [
     { rank: 1, className: "اول-1", manager: "مهدی مهدوی" },
     { rank: 2, className: "دوم-1", manager: "مهدی مهدوی" },
@@ -8,10 +10,10 @@ export const ClassManage = () => {
 
   return (
     <div className="h-screen flex">
-      {/* Sidebar */}
+
       <Sidebar />
 
-      {/* Main content */}
+
       <main className="flex-1 flex flex-col p-4 md:p-8 bg-gray-100">
         {/* Header */}
         <div className="flex items-center justify-between border-b pb-4 mb-4">

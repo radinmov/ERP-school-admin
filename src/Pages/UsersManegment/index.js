@@ -1,8 +1,10 @@
 import React from 'react';
-import { BiUserPlus, BiSearch } from 'react-icons/bi'; // User plus and search icons
+import { BiUserPlus, BiSearch } from 'react-icons/bi';
 import Sidebar from '../../componets/Sidebar';
+import useTitle from "../../componets/Hook/useTitle";
 
 export const UsersManegment = () => {
+  useTitle("UsersManegment")
   return (
     <div className="h-screen flex flex-col bg-gray-100">
       <div className="flex flex-row">

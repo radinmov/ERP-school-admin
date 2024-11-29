@@ -1,8 +1,10 @@
 import React from 'react';
 import { FaUserCircle } from 'react-icons/fa'; // User icon for the profile image placeholder
 import Sidebar from '../../componets/Sidebar';
+import useTitle from '../../componets/Hook/useTitle';
 
 export const UserProfile = () => {
+  useTitle("UserProfile")
   return (
     <div className="h-screen flex flex-col bg-gray-100">
       <div className="flex flex-row">

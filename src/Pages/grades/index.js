@@ -1,8 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../../componets/Sidebar';
+import useTitle from "../../componets/Hook/useTitle";
 
 export const Grades = () => {
+  useTitle("Grades")
   const navigate = useNavigate();
 
   return (
@@ -14,7 +16,7 @@ export const Grades = () => {
           <div className="bg-white shadow-md rounded-md p-6">
             <button
               className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
-              onClick={() => navigate('/grades-chart')}
+              onClick={() => navigate('/grades/charts')}
             >
               نمایش نمودار نمرات
             </button>

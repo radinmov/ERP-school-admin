@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import Sidebar from '../../../componets/Sidebar';
+import useTitle from "../../../componets/Hook/useTitle";
+
 
 export const HomeWorkChart = () => {
-  // State to hold the data and colors
+  useTitle("charting-homework")
   const [chartData, setChartData] = useState([
     { name: 'علوم', تکالیف: 20 },
     { name: 'ریاضی', تکالیف: 35 },
     { name: 'ادبیات', تکالیف: 50 },
     { name: 'مطالعات', تکالیف: 15 },
   ]);
-  const [barColor, setBarColor] = useState('#8884d8'); // Default bar color
+  const [barColor, setBarColor] = useState('#8884d8'); 
 
-  // Handler for input changes (updating chart data)
   const handleDataChange = (index, field, value) => {
     const updatedData = [...chartData];
     updatedData[index][field] = field === 'تکالیف' ? Number(value) : value;

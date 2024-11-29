@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Sidebar from "../../componets/Sidebar";
+import useTitle from "../../componets/Hook/useTitle";
 
 export const PresentUser = () => {
-  // Sample data for students
+  useTitle("perseting the students")
   const [students, setStudents] = useState([
     { id: 1, name: "مهدی مهدی زاده", isPresent: true },
     { id: 2, name: "محمد محمدی", isPresent: true },

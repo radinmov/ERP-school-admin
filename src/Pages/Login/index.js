@@ -1,10 +1,12 @@
 import React from "react";
 import Sidebar from "../../componets/Sidebar";
+import useTitle from "../../componets/Hook/useTitle";
 
 export const Login = () => {
+  useTitle("Login")
   return (
     <div className="flex min-h-screen bg-blue-100">
-      {/* Sidebar */}
+
       <Sidebar />
 
       {/* Main Content */}

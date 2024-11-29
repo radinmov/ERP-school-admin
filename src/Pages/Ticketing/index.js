@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Sidebar from "../../componets/Sidebar";
+import useTitle from "../../componets/Hook/useTitle";
 
 export const Ticketing = () => {
+  useTitle("Ticketing")
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 
   const toggleCalendar = () => {
