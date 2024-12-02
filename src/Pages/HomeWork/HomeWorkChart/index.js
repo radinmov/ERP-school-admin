@@ -20,7 +20,6 @@ export const HomeWorkChart = () => {
     setChartData(updatedData);
   };
 
-  // Handler for color change
   const handleColorChange = (e) => {
     setBarColor(e.target.value);
   };
@@ -40,7 +39,7 @@ export const HomeWorkChart = () => {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="تکالیف" fill={barColor} />
+              <Bar dataKey="تکالیف"  />
             </BarChart>
           </div>
 
@@ -65,17 +64,7 @@ export const HomeWorkChart = () => {
               </div>
             ))}
 
-            {/* Input for Changing Bar Color */}
-            <div className="flex items-center gap-4 mt-4">
-              <label htmlFor="colorPicker" className="font-bold">انتخاب رنگ:</label>
-              <input
-                type="color"
-                id="colorPicker"
-                value={barColor}
-                onChange={handleColorChange}
-                className="w-10 h-10 cursor-pointer"
-              />
-            </div>
+
           </div>
         </main>
       </div>

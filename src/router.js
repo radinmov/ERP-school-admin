@@ -13,6 +13,8 @@ import { HomeWork } from "./Pages/HomeWork";
 import { HomeWorkChart } from "./Pages/HomeWork/HomeWorkChart/index";
 import { Grades } from "./Pages/grades";
 import { GradesChart } from "./Pages/grades/gradesCharts/index";
+import { TicketingChat } from "./Pages/TicktingChat";
+
 
 const routes = createBrowserRouter([
   {
@@ -26,6 +28,10 @@ const routes = createBrowserRouter([
   {
     path: '/Ticketing',
     element: <Ticketing />
+  },
+  {
+    path: '/Ticketing/chat',
+    element: <TicketingChat />
   },
   {
     path: '/HomeWork',

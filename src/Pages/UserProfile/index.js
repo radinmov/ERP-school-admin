@@ -4,15 +4,15 @@ import Sidebar from '../../componets/Sidebar';
 import useTitle from '../../componets/Hook/useTitle';
 
 export const UserProfile = () => {
-  useTitle("UserProfile")
-  return (
-    <div className="h-screen flex flex-col bg-gray-100">
-      <div className="flex flex-row">
-        {/* Sidebar */}
-        <Sidebar />
+  useTitle("UserProfile");
 
-        {/* Main Content */}
-        <main className="flex-1 flex flex-col items-center p-4 md:p-8">
+  return (
+    <div className="h-screen flex bg-gray-200 overflow-hidden">
+      <Sidebar />
+
+      {/* Main Content */}
+      <main className="flex-1 overflow-y-auto bg-gradient-to-b from-gray-100 to-gray-300">
+        <div className="flex flex-col items-center p-4 md:p-8">
           {/* Profile Header */}
           <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-xl">
             {/* Profile Image */}
@@ -21,7 +21,9 @@ export const UserProfile = () => {
                 <FaUserCircle className="text-blue-500 text-6xl" />
               </div>
             </div>
-            <h2 className="text-center text-xl font-bold text-gray-700 mb-4">پروفایل کاربر</h2>
+            <h2 className="text-center text-xl font-bold text-gray-700 mb-4">
+              پروفایل کاربر
+            </h2>
 
             {/* Profile Form */}
             <form className="space-y-4">
@@ -120,8 +122,8 @@ export const UserProfile = () => {
               </button>
             </form>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
   );
 };

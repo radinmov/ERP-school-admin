@@ -64,6 +64,12 @@ const Sidebar = () => {
           active={activeButton === 'سامانه تکنیک'}
         />
         <DashboardButton
+          icon={<FaQuestionCircle size={45} />}
+          label="سامانه تکنیک2"
+          onClick={() => handleNavigation('/Ticketing/chat', '۲سامانه تکنیک')}
+          active={activeButton === ' ۲سامانه تکنیک'}
+        />
+        <DashboardButton
           icon={<FaBook size={45} />}
           label="سامانه تکلیف "
           onClick={() => handleNavigation('/HomeWork', 'سامانه تکلیف')}

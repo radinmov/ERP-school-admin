@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "../../componets/Sidebar";
 import useTitle from "../../componets/Hook/useTitle";
+import { FaLock, FaUser } from "react-icons/fa";
 
 export const Login = () => {
   useTitle("Login")
@@ -22,8 +23,7 @@ export const Login = () => {
               </label>
               <div className="flex items-center border rounded-md">
                 <span className="px-3 text-gray-400">
-                  {/* Icon for Username */}
-                  👤
+                  <FaUser size={20} color="blue" />
                 </span>
                 <input
                   type="text"
@@ -40,8 +40,7 @@ export const Login = () => {
               </label>
               <div className="flex items-center border rounded-md">
                 <span className="px-3 text-gray-400">
-                  {/* Icon for Password */}
-                  🔒
+                <FaLock size={20} color="blue" />
                 </span>
                 <input
                   type="password"
@@ -62,7 +61,6 @@ export const Login = () => {
                 من را به یاد داشته باش
               </label>
             </div>
-            {/* Submit Button */}
             <button
               type="submit"
               className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600"
