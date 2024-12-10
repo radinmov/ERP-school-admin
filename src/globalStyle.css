@@ -35,3 +35,8 @@ body {
     font-style: normal;
     height: 100vh;
 }
+.custom-border-gradient {
+    border: 1px solid transparent; /* Make sure the border is transparent */
+    border-image-source: linear-gradient(90deg, #004AD5 37%, rgba(255, 119, 255, 0.47) 100%);
+    border-image-slice: 1;
+  }
